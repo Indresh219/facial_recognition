@@ -1,0 +1,97 @@
+/* App.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #e0eafc, #cfdef3);
+    min-height: 100vh;
+}
+/* Center the app vertically and horizontally */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+
+    /* Add these to center children */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* center text inside children */
+}
+  
+h1 {
+    text-align: center;
+    color: #2d3a4b;
+    margin-bottom: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+input[type="file"], input[type="text"] {
+    display: block;
+    width: 100%;
+    margin: 16px 0;
+    padding: 10px 12px;
+    border: 1px solid #bfc9d1;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f7fafc;
+    transition: border 0.2s;
+}
+
+input[type="file"]:focus, input[type="text"]:focus {
+    border-color: #6c63ff;
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #5548c8;
+}
+
+.result-container {
+    margin-top: 28px;
+    padding: 18px;
+    background: #f1f6fb;
+    border-radius: 10px;
+    text-align: center;
+    color: #2d3a4b;
+    font-size: 1.05rem;
+    box-shadow: 0 2px 8px rgba(108,99,255,0.06);
+}
+
+@media (max-width: 600px) {
+    .app-container {
+        padding: 18px 8px;
+        max-width: 98vw;
+    }
+}
