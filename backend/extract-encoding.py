@@ -8,6 +8,9 @@ import cv2
 import json
 import os
 
+import sys
+sys.stdout.reconfigure(encoding='utf-8')
+
 from flask_cors import CORS
 
 app = Flask(__name__)
